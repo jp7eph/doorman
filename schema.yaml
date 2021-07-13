@@ -1,0 +1,54 @@
+type: map
+mapping:
+  "mqtt":
+    type: map
+    mapping:
+      "broker":
+        type: str
+        required: true
+      "port":
+        type: int
+        required: true
+      "username":
+        type: str
+      "password":
+        type: str
+      "tls":
+        type: map
+        mapping:
+          "enable":
+            type: bool
+            required: true
+          "cafile":
+            type: str
+          "certfile":
+            type: str
+          "keyfile":
+            type: str
+  "homebridge":
+    type: map
+    mapping:
+      "set_target_state_topic":
+        type: str
+        required: true
+      "get_target_state_topic":
+        type: str
+        required: true
+      "get_current_state_topic":
+        type: str
+        required: true
+  "sesame":
+    type: map
+    mapping:
+      "api_key":
+        type: str
+        required: true
+      "client_id":
+        type: str
+        required: true
+      "uuid":
+        type: str
+        required: true
+      "secret_key":
+        type: str
+        required: true

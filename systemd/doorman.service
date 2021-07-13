@@ -1,0 +1,16 @@
+[Unit]
+Description= Control SESAME3 from Homebridge by MQTT over TLS
+
+[Service]
+# Please modify to DOORMAN placed path
+Environment=DOORMAN_PATH=/home/pi/DOORMAN
+WorkingDirectory=/home/pi/DOORMAN
+
+ExecStart=python3 ${DOORMAN_PATH}/DOORMAN.py
+EnvironmentFile=-${DOORMAN_PATH}/config.yaml
+Restart=always
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target

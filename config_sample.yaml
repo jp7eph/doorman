@@ -1,0 +1,21 @@
+mqtt:
+  broker: "localhost"
+  port: 8883
+  username: "USERNAME"
+  password: "PASSWORD"
+  tls:
+    enable: true
+    cafile: "CAFILE_PATH"
+    certfile: "CERTFILE_PATH"
+    keyfile: "KEYFILE_PATH"
+
+homebridge:
+  set_target_state_topic: "SET_TARGET_STATE_TOPIC"
+  get_target_state_topic: "GET_TARGET_STATE_TOPIC"
+  get_current_state_topic: "GET_CURRENT_STATE_TOPIC"
+
+sesame:
+  api_key: "YOUR_API_KEY"
+  client_id: "YOUR_CLUENT_ID"
+  uuid: "YOUR_SESAME_UUID"
+  secret_key: "YOUR_SESAME_SECRET_KEY"
