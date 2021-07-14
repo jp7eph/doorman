@@ -45,7 +45,7 @@ optional arguments:
 ```bash
 # suit unit file to your environment
 vi ./systemd/doorman.service
-
+# register systemd service
 sudo ln -s ./systemd/doorman.service /etc/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl start doorman.service
