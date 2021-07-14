@@ -82,7 +82,7 @@ def change_current_state(device: CHSesame2, status: CHSesame2MechStatus):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description="""Control SESAME3 from Homebridge by MQTT over TLS"""
+        description="""Control SESAME3 from Homebridge by MQTT"""
     )
     parser.add_argument(
         '-c',
@@ -116,7 +116,7 @@ if __name__ == '__main__':
 
     """ MQTTの初期化 """
     mqtt_client = mqtt.Client()
-    if config['mqtt']['username'] is not None:
+    if (config['mqtt']['username'] is not None) or (config['mqtt']['password'] is not None):
         mqtt_client.username_pw_set(
             username=config['mqtt']['username'], password=config['mqtt']['password'])
     if config['mqtt']['tls']['enable'] == True:

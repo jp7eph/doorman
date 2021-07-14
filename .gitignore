@@ -141,7 +141,7 @@ cython_debug/
 .vscode/
 
 # venv directory for develop
-DOORMAN/
+doorman/
 
 # config file for deploy
 config.yaml
