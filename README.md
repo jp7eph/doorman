@@ -27,7 +27,7 @@ vi config.yaml
 
 ## Usage
 ```bash
-usage: DOORMAN.py [-h] [-c CONFIG_FILE] [-s SCHEMA_FILE]
+usage: doorman.py [-h] [-c CONFIG_FILE] [-s SCHEMA_FILE]
 
 Control SESAME3 from Homebridge by MQTT
 
