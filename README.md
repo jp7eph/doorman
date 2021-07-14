@@ -16,12 +16,12 @@ Control SESAME3 from Homebridge by MQTT (support over TLS)
 ## Installation
 ```bash
 git clone git@github.com:jp7eph/doorman.git
-cd doorman
+cd ./doorman
 # install dependence packages
 pip3 install -r requirements.txt
 # make config file for deployment
 cp config_sample.yaml config.yaml
-# suit config file to your environment.
+# suit config file to your environment
 vi config.yaml
 ```
 
@@ -43,6 +43,9 @@ optional arguments:
 
 ## Manage as systemd service
 ```bash
+# suit unit file to your environment
+vi ./systemd/doorman.service
+
 sudo ln -s ./systemd/doorman.service /etc/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl start doorman.service
